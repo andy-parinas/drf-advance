@@ -6,6 +6,14 @@ Django Rest Framework Advance Tutorial
 
 docker compose run --rm app sh -c "django-admin startproject app ."
 
+## Create a Django App
+
+docker compose run --rm app sh -c "python manage.py startapp core"
+
 ## Lint using Flake8
 
 docker compose run --rm app sh -c "flake8"
+
+## Run Test
+
+docker compose run --rm app sh -c "python manage.py test"
